@@ -1,0 +1,90 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Lodewic}{van Twillert}
+%\title{{{title}}}                               % optional, remove / comment the line if not wanted
+%%%\address{{{address}}}{{{postcode}}}{{{country}}}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+31625454401}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{{{phone_fixed}}}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{{{phone_fax}}}                      % optional, remove / comment the line if not wanted
+\email{lodewic.vantwillert@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{{{homepage}}}                         % optional, remove / comment the line if not wanted
+%\extrainfo{{{extrainfo}}}                 % optional, remove / comment the line if not wanted
+%\photo[90pt][0.4pt]{{{photo}}}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{{{quote}}}}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+ \thispagestyle{empty}
+ \pagestyle{empty}
+ \maketitle
+ 
+ 
+ 
+ \section{Education}
+ 
+ \cventry{2015-2017}{MSc Econometrics}{UvA}{Amsterdam}{}{Big data business analytics\\ Focus on Machine learning}
+ \cventry{2012-2014}{BSc Econometrics}{UvA}{Amsterdam}{}{Minor computational programming}
+ \cventry{2004-2010}{Bilingual VWO}{'t Atrium}{Amersfoort}{}{Including IB English}
+ 
+ \section{Master Thesis}
+ 
+ \cvitem{title}{The erroneous use of the Haar wavelet for stock price prediction}
+ \cvitem{supervisor}{Prof. Dr. Marcel Worring}
+ \cvitem{description}{A critical analysis and replication of a well-cited research paper proposing a combination of wavelet transformation and recurrent neural networks for successful stock prediction. Wavelet transformations can be used in time-series analysis to reduce the noise of the signal, or stock prices specifically. Our research criticizes the use of the Haar wavelet by showing that it is both impossible to use in real-time and the sole reason for the reportedly profitable, yet false, 'predictions' shown by Hsieh et al. [2011]. This error was potentially reproduced in more recent research}
+ 
+ \section{Experience}
+ 
+ \cventry{July 2018 -- Aug 2018}{Freelance python developer}{Ernst \& Young}{Amsterdam}{}{\begin{itemize}
+ 	\item Backend web development using the Django web framework built on python and SQLite
+ 	\item Created new frontend web templates using HTML, css and JavaScript
+ 	\item Helped finalize the existing project for the first release
+ \end{itemize}}
+ \cventry{June 2017 -- June 2018}{Data scientist / Bioinformatician}{TNO: Micro- and Systemsbiology}{Zeist}{Data science for scientific research}{\begin{itemize}
+ 	\item Standardized statistical analysis
+ 	\item Many improvements for research standardization and reproducibity
+ 	\item Shiny applications to make routine tasks accessible to researchers
+ 	\item A great environment to learn from researchers with widespread backgrounds
+ \end{itemize}}
+ \cventry{Feb 2015 -- Feb 2016}{Excel/VBA application developer}{NZA}{Utrecht}{}{\begin{itemize}
+ 	\item Automated most routine excel tasks using VBA
+ 	\item Data analysis in R with the saved time
+ 	\item Unique position in the department
+ \end{itemize}}
+ \cventry{Nov 2011 -- July 2015}{Math tutor}{Bijlesnetwerk}{}{}{Teaching mathematics to high school students outside of school}
+ \cventry{2012--2013}{Content producer}{Qelp}{}{}{Producing manuals for mobile phones using a standardized process}
+\end{document}
